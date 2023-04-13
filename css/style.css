@@ -68,7 +68,7 @@ body {
 }
 
 .g-polygon {
-    background-image: url('/images/bg.png');
+    background-image: url('../images/bg.png');
     position: fixed;
     opacity: .5;
     width: 100%;
