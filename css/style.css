@@ -1,0 +1,234 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+.viewer-container {
+    border-radius: 32px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.bg-pink {
+    background: linear-gradient(90deg, #ffe4f9 28px, transparent 1%) 50%, linear-gradient(#ffe4f9 28px, transparent 1%) 50%, #f3d9ec;
+    background-size: 32px 32px;
+}
+
+.bg-blue {
+    background: linear-gradient(90deg, #e0f0ff 28px, transparent 1%) 50%, linear-gradient(#e0f0ff 28px, transparent 1%) 50%, #d4e4f1;
+    background-size: 32px 32px;
+}
+
+.bg-green {
+    background: linear-gradient(90deg, #dcfff2 28px, transparent 1%) 50%, linear-gradient(#dcfff2 28px, transparent 1%) 50%, #d0f2e7;
+    background-size: 32px 32px;
+}
+
+.bg-yellow {
+    background: linear-gradient(90deg, #fff5ec 28px, transparent 1%) 50%, linear-gradient(#fff5ec 28px, transparent 1%) 50%, #f3e9e1;
+    background-size: 32px 32px;
+}
+
+.viewer-big-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+    gap: 30px;
+    aspect-ratio: 683/539;
+    position: relative;
+    animation: div-animation 1s ease-in-out;
+}
+
+.big-transparent {
+    opacity: 0;
+    transform: scale(10);
+}
+
+.original {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes div-animation {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.g-polygon {
+    background-image: url('/images/bg.png');
+    position: fixed;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+.g-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    backdrop-filter: blur(150px);
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 10px 0;
+    background: #ffffff;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 10px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.grid {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.name {
+    width: 100%;
+    margin: auto;
+
+
+}
+
+.name h2 {
+    font-size: 5vw;
+    font-weight: 600;
+    margin: 5vh;
+}
+
+.h2First {
+    animation: div-animation 1s ease-in-out;
+    margin-left: 0;
+}
+
+.h2Second {
+    animation: div-animation 1.5s ease-in-out;
+    margin-left: 0;
+}
+
+.favSection {
+    height: 90vh;
+    width: 100%;
+}
+
+.favSection h2 {
+    padding-top: 10vh;
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 5vh;
+    text-align: center;
+}
+
+.favGrid {
+    padding: 5% 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.favContainer {
+    width: 80%;
+    height: auto;
+    padding: 10%;
+    background: rgba(255, 255, 255, 0.437);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(255, 255, 255, 0.58);
+}
+
+svg{
+    width: 4vw;
+    height: 4vw;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+.favContainer h3{
+    margin: 2vh;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: center;
+}
+path{
+    fill: linear-gradient(147.23deg, #F0F0F0 16.93%, rgba(240, 240, 240, 0.610453) 46.07%, rgba(240, 240, 240, 0.2) 76.76%);
+}

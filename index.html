@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- connects to the stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- connect to a Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- connect to js file -->
+  <script src="/js/script.js" defer></script>
+  <title>About Charlotte</title>
+</head>
+
+<body class="mainbody">
+  <header>
+    <div class="container">
+      <h1 class="logo"></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="cocktails.html">Cocktails</a></li>
+          <li><a href="places.html">Places</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="g-bg">
+      <div class="g-polygon"></div>
+    </div>
+    <div class="grid">
+      <div class="viewer-big-container">
+        <div class="viewer-container bg-pink">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+          <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode"
+            events-target="global"></spline-viewer>
+        </div>
+        <div class="viewer-container bg-blue">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+          <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode"
+            events-target="global"></spline-viewer>
+        </div>
+        <div class="viewer-container bg-green">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+          <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode"
+            events-target="global"></spline-viewer>
+        </div>
+        <div class="viewer-container bg-yellow">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+          <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode"
+            events-target="global"></spline-viewer>
+        </div>
+      </div>
+      <div class="name">
+        <h2 class="h2First">Hello,</h2>
+        <h2 class="h2Second">I'm Charlotte</h2>
+      </div>
+    </div>
+    <div class="favSection">
+      <h2>Explore My Favorites</h2>
+      <div class="favGrid">
+        <div class="favContainer">
+
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_h8lk5ow8.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+          <h3>Games</h3>
+        </div>
+        <div class="favContainer">
+
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_0givchox.json" background="transparent"
+            speed="1.6" style="width: 300px; height: 300px; padding: 40px;" loop autoplay></lottie-player>
+          <h3>Cocktails</h3>
+        </div>
+        <div class="favContainer">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_SlIaT8.json" background="transparent"
+            speed="0.5" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+          <h3>Places</h3>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+
+  </main>
+</body>
+
+</html>
