@@ -203,9 +203,11 @@ h2 {
     padding: 5% 20%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 }
 
 .favContainer {
+    cursor: pointer;
     width: 80%;
     height: auto;
     padding: 10%;
@@ -243,8 +245,8 @@ lottie-player {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2%;
     grid-row-gap: 10%;
+    justify-items: center;
 }
-
 
 .media {
     width: 300px;
@@ -299,11 +301,7 @@ lottie-player {
     background-color: #000;
 }
 
-.gamebody h2 {
-    font-family: 'Russo One', sans-serif;
-    color: white;
-    margin: 5%;
-}
+
 
 .gameheader{
     background-color: #000;
@@ -317,4 +315,25 @@ lottie-player {
 }
 .gameheader nav a::before {
     background-color: white;
+}
+
+
+
+
+.detailbody .layer {
+    background: #ffffff;
+    color: #08090d;
+}
+
+.detailbody h1{
+    margin: 4%;
+    font-weight: bolder;
+    font-size: 3.2vw;
+    font-weight: 600;
+    margin: 5vh;
+    text-align: center;
+}
+.gamebody h1 {
+    font-family: 'Russo One', sans-serif;
+    color: white;
 }
