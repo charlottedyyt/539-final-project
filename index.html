@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- connect to js file -->
+  <script src="js/script.js" defer></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <title>About Charlotte</title>
   <link rel="icon" type="image/x-icon" href="../images/picture1.png">
@@ -68,21 +71,18 @@
       <h2>Explore My Favorites</h2>
       <div class="favGrid">
         <div class="favContainer" onclick="window.location.href = 'games.html';">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_h8lk5ow8.json" background="transparent"
-            speed="1" loop autoplay></lottie-player>
+          <lottie-player id="game" src="https://assets10.lottiefiles.com/packages/lf20_h8lk5ow8.json" background="transparent"
+            speed="1" loop></lottie-player>
           <h3>Games</h3>
         </div>
         <div class="favContainer" onclick="window.location.href = 'cocktails.html';">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player class="cocktails" src="https://assets7.lottiefiles.com/packages/lf20_0givchox.json"
-            background="transparent" speed="1.6" loop autoplay></lottie-player>
+          <lottie-player id="cocktail" class="cocktails" src="https://assets7.lottiefiles.com/packages/lf20_0givchox.json"
+            background="transparent" speed="1.6" loop></lottie-player>
           <h3>Cocktails</h3>
         </div>
         <div class="favContainer" onclick="window.location.href = 'places.html';">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_SlIaT8.json" background="transparent"
-            speed="0.5" loop autoplay></lottie-player>
+          <lottie-player id="place" src="https://assets5.lottiefiles.com/private_files/lf30_SlIaT8.json" background="transparent"
+            speed="0.5" loop></lottie-player>
           <h3>Places</h3>
         </div>
       </div>
